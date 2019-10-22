@@ -1,4 +1,4 @@
-## Create project named "Docker application" and add below lines as build shell script section 
+## Create project named "Docker application" and add below lines in build shell script section 
 ```sh
 
 
