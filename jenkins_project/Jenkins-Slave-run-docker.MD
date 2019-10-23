@@ -3,6 +3,7 @@
 
 
 cd /home/jenkins-slave
+sudo rm -rf /home/jenkins-slave/Jenkins-setup
 git clone https://github.com/splunklearners/Jenkins-setup.git
 cd ./Jenkins-setup/docker-compose
 sudo docker-compose build
