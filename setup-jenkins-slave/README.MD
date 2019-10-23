@@ -20,7 +20,7 @@ useradd jenkins-slave
 # Create SSH Keys
 sudo su - jenkins-slave
 ssh-keygen -t rsa -N "" -f /home/jenkins-slave-01/.ssh/id_rsa
-# The private and public keys will be created at these locations `/home/jenkins-slave-01/.ssh/id_rsa` and `/home/jenkins-slave-01/.ssh/id_rsa.pub`
+# The private and public keys will be created at these locations `/home/jenkins-slave/.ssh/id_rsa` and `/home/jenkins-slave-01/.ssh/id_rsa.pub`
 cd .ssh
 cat id_rsa.pub > authorized_keys
 chmod 400 authorized_keys
