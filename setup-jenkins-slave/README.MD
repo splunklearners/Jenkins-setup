@@ -33,7 +33,7 @@ chmod 400 90-cloud-init-users
 ```
 
 ### Configuration on Master
-Copy the slave node's public key[`id_rsa.pub`] to Master Node's `known_hosts` file
+
 ```sh
 sudo mkdir -p /var/lib/jenkins/.ssh
 sudo cd /var/lib/jenkins/.ssh
