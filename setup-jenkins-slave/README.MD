@@ -35,12 +35,11 @@ chmod 400 90-cloud-init-users
 ### Configuration on Master
 Copy the slave node's public key[`id_rsa.pub`] to Master Node's `known_hosts` file
 ```sh
-mkdir -p /var/lib/jenkins/.ssh
-cd /var/lib/jenkins/.ssh
-ssh-keyscan -H SLAVE-NODE-IP-OR-HOSTNAME >>/var/lib/jenkins/.ssh/known_hosts
-# ssh-keyscan -H 172.31.38.42 >>/var/lib/jenkins/.ssh/known_hosts
-chown jenkins:jenkins known_hosts
-chmod 700 known_hosts
+sudo mkdir -p /var/lib/jenkins/.ssh
+sudo cd /var/lib/jenkins/.ssh
+sudo ssh-keyscan -H SLAVE-NODE-IP-OR-HOSTNAME >>/var/lib/jenkins/.ssh/known_hosts
+sudo chown -R jenkins:jenkins /var/lib/jenkins/.ssh
+sudo chmod 700 /var/lib/jenkins/.ssh/known_hosts
 ```
 
 #### Configure the Slave using `Manage Jenkins`
