@@ -1,9 +1,8 @@
 # Integrate Jenkins project with Github reposistory
 
 
-let's configure the GitHUb and Jenkins integration. Let's begin with the GitHub side!
+### let's configure the GitHUb and Jenkins integration. Let's begin with the GitHub side!
 
-### steps
 
 ```
 Step 1: Go to your GitHub repository and click on Settings.
