@@ -2,10 +2,7 @@
 ```sh
 
 
-cd /home/jenkins-slave
-sudo rm -rf /home/jenkins-slave/Jenkins-setup
-git clone https://github.com/splunklearners/Jenkins-setup.git
-cd ./Jenkins-setup/docker-compose
+cd /home/jenkins-slave/workspace/dockerdeploy/docker-compose
 sudo docker-compose build
 sudo docker-compose up -d
 
