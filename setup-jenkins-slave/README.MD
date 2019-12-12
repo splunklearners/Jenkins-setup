@@ -37,9 +37,10 @@ chmod 400 90-cloud-init-users
 ```sh
 sudo mkdir -p /var/lib/jenkins/.ssh
 sudo cd /var/lib/jenkins/.ssh
-sudo ssh-keyscan -H SLAVE-NODE-IP-OR-HOSTNAME >>/var/lib/jenkins/.ssh/known_hosts
-sudo chown -R jenkins:jenkins /var/lib/jenkins/.ssh
-sudo chmod 700 /var/lib/jenkins/.ssh/known_hosts
+sudo su -
+ssh-keyscan -H SLAVE-NODE-IP-OR-HOSTNAME >>/var/lib/jenkins/.ssh/known_hosts
+chown -R jenkins:jenkins /var/lib/jenkins/.ssh
+chmod 700 /var/lib/jenkins/.ssh/known_hosts
 ```
 
 #### Configure the Slave using `Manage Jenkins`
