@@ -16,7 +16,7 @@ sudo yum -y install java-1.8.0-openjdk
 ## Setup Jenkins Slave
 ```sh
 # Create user and add the user to wheel group
-useradd jenkins-slave
+sudo useradd jenkins-slave
 # Create SSH Keys
 sudo su - jenkins-slave
 ssh-keygen -t rsa -N "" -f /home/jenkins-slave/.ssh/id_rsa
