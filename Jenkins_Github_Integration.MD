@@ -3,6 +3,10 @@
 
 ### let's configure the GitHUb and Jenkins integration. Let's begin with the GitHub side!
 
+### For detailed steps with screen shot you may refer below link 
+
+https://www.javatpoint.com/github-setup-for-jenkins
+
 
 ```
 Step 1: Go to your GitHub repository and click on Settings.
